@@ -77,29 +77,29 @@ Actualmente el proyecto soporta los siguientes formatos:
               Base Vectorial ChromaDB (chroma_db)
                               ▲
                               │
-      Embeddings (Google Gemini Embedding)
+             Embeddings (Google Gemini Embedding)
                               ▲
                               │
-          División en chunks (Chunking)
+                División en chunks (Chunking)
                               ▲
                               │
-         Conversión a objetos Document
+                Conversión a objetos Document
                               ▲
                               │
-               Carga de documentos
+                    Carga de documentos
                               ▲
                               │
-                Carpeta documents/
+                    Carpeta documents/
 ────────────────────────────────────────────────────
                               │
                               ▼
-                Documentos recuperados
+                   Documentos recuperados
                               │
                               ▼
-                   Prompt + Contexto
+                     Prompt + Contexto
                               │
                               ▼
-               Modelo Gemini 3.5 Flash
+                  Modelo Gemini 3.5 Flash
                               │
                               ▼
                 Generación de la respuesta
