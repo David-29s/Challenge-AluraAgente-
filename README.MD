@@ -62,57 +62,57 @@ Actualmente el proyecto soporta los siguientes formatos:
 # 🧠 Arquitectura del proyecto
 
 ``` text
-                                              FASE 1 - INDEXACIÓN
+                                                FASE 1 - INDEXACIÓN
 
-                 Carpeta documents/
-                          │
-                          ▼
-               Carga de documentos
-                          │
-                          ▼
-        Conversión a objetos Document
-                          │
-                          ▼
-     División en chunks (Chunking)
-                          │
-                          ▼
- Embeddings (Google Gemini Embedding)
-                          │
-                          ▼
- Base Vectorial ChromaDB (chroma_db)
-                          │
-                          ▼
-                    Retriever
-
-════════════════════════════════════════════════════
-
-                  FASE 2 - CONSULTA
-
-                      Usuario
-                          │
-                          ▼
-            Interfaz Web (Gradio)
-                          │
-                          ▼
-              consultar_agente()
-                          │
-                          ▼
-                    rag_chain
-                          │
-                          ▼
-                    Retriever
-                          │
-                          ▼
-               Prompt + Contexto
-                          │
-                          ▼
-            Modelo Gemini 3.5 Flash
-                          │
-                          ▼
-          Generación de la respuesta
-                          │
-                          ▼
-              Respuesta al usuario
+                                                 Carpeta documents/
+                                                          │
+                                                          ▼
+                                               Carga de documentos
+                                                          │
+                                                          ▼
+                                          Conversión a objetos Document
+                                                          │
+                                                          ▼
+                                        División en chunks (Chunking)
+                                                          │
+                                                          ▼
+                                    Embeddings (Google Gemini Embedding)
+                                                          │
+                                                          ▼
+                                     Base Vectorial ChromaDB (chroma_db)
+                                                          │
+                                                          ▼
+                                                    Retriever
+                                
+                                ════════════════════════════════════════════════════
+                                
+                                                  FASE 2 - CONSULTA
+                                
+                                                      Usuario
+                                                          │
+                                                          ▼
+                                                Interfaz Web (Gradio)
+                                                          │
+                                                          ▼
+                                                 consultar_agente()
+                                                          │
+                                                          ▼
+                                                      rag_chain
+                                                          │
+                                                          ▼
+                                                      Retriever
+                                                          │
+                                                          ▼
+                                                 Prompt + Contexto
+                                                          │
+                                                          ▼
+                                              Modelo Gemini 3.5 Flash
+                                                          │
+                                                          ▼
+                                             Generación de la respuesta
+                                                          │
+                                                          ▼
+                                              Respuesta al usuario
 ```
 
 ------------------------------------------------------------------------
