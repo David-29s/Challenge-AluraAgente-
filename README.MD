@@ -62,27 +62,27 @@ Actualmente el proyecto soporta los siguientes formatos:
 # 🧠 Arquitectura del proyecto
 
 ``` text
-                                                FASE 1 - INDEXACIÓN
+                                                 FASE 1 - INDEXACIÓN
 
                                                  Carpeta documents/
                                                           │
                                                           ▼
-                                               Carga de documentos
+                                                 Carga de documentos
                                                           │
                                                           ▼
-                                          Conversión a objetos Document
+                                             Conversión a objetos Document
                                                           │
                                                           ▼
-                                        División en chunks (Chunking)
+                                             División en chunks (Chunking)
                                                           │
                                                           ▼
-                                    Embeddings (Google Gemini Embedding)
+                                          Embeddings (Google Gemini Embedding)
                                                           │
                                                           ▼
-                                     Base Vectorial ChromaDB (chroma_db)
+                                          Base Vectorial ChromaDB (chroma_db)
                                                           │
                                                           ▼
-                                                    Retriever
+                                                      Retriever
                                 
                                 ════════════════════════════════════════════════════
                                 
