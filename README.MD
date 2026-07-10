@@ -79,7 +79,7 @@ Actualmente el proyecto soporta los siguientes formatos:
                  Prompt + Contexto
                           │
                           ▼
-                 Gemini 2.5 Flash
+                 Gemini 3.5 Flash
                           │
                           ▼
                       Respuesta
@@ -224,8 +224,8 @@ RecursiveCharacterTextSplitter
 Configuración:
 
 ```
-chunk_size = 200
-chunk_overlap = 50
+chunk_size = 800
+chunk_overlap = 100
 ```
 
 ---
