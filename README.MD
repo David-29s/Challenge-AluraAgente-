@@ -52,38 +52,54 @@ Actualmente el proyecto soporta los siguientes formatos:
 # 🧠 Arquitectura del proyecto
 
 ```text
-                  Base de conocimiento
-                          │
-                          ▼
-                 Carpeta documents/
-                          │
-                          ▼
-                 Carga de documentos
-                          │
-                          ▼
-              Conversión a objetos Document
-                          │
-                          ▼
-                     Chunking
-                          │
-                          ▼
-          Embeddings (Google Gemini)
-                          │
-                          ▼
-                     ChromaDB
-                          │
-                          ▼
-                      Retriever
-                          │
-                          ▼
-                 Prompt + Contexto
-                          │
-                          ▼
-                 Gemini 3.5 Flash
-                          │
-                          ▼
-                      Respuesta
-```
+                                             Usuario
+                              │
+                              ▼
+                  Interfaz Web (Gradio)
+                              │
+                              ▼
+                    Consulta del usuario
+                              │
+                              ▼
+                         Retriever
+                              │
+                              ▼
+                   Base Vectorial ChromaDB
+                              ▲
+                              │
+        Embeddings (Google Gemini Embedding)
+                              ▲
+                              │
+               Chunking de documentos
+                              ▲
+                              │
+          Conversión a objetos Document
+                              ▲
+                              │
+               Carga de documentos
+                              ▲
+                              │
+                Carpeta documents/
+                              │
+────────────────────────────────────────────────────
+                              │
+                              ▼
+                Documentos recuperados
+                              │
+                              ▼
+                   Prompt + Contexto
+                              │
+                              ▼
+              Modelo Gemini 3.5 Flash
+                              │
+                              ▼
+                Respuesta del agente
+                              │
+                              ▼
+                Interfaz Web (Gradio)
+                              │
+                              ▼
+                           Usuario
 
 ---
 
@@ -101,6 +117,7 @@ EduDocsAI/
 │
 ├── EduDocsAI_RAG_Gemini.ipynb
 ├── README.md
+├── MANTENIMIENTO.md
 └── requirements.txt
 ```
 
