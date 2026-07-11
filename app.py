@@ -1,4 +1,10 @@
 # =====================================
+# EduDocsAI
+# Agente RAG con Google Gemini + LangChain + ChromaDB
+# Challenge Alura ONE
+# =====================================
+
+# =====================================
 # Importación de librerías
 # =====================================
 
